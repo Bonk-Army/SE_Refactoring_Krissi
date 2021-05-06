@@ -4,23 +4,23 @@ public class Movie {
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
     public static final int NEW_RELEASE = 1;
-    private String title;
-    private int priceCode;
+    private String movieTitle;
+    private int moviePriceCode;
 
-    public Movie(String newtitle, int newpriceCode) {
-        title = newtitle;
-        priceCode = newpriceCode;
+    public Movie(String movieTitle, int moviePriceCode) {
+        this.movieTitle = movieTitle;
+        this.moviePriceCode = moviePriceCode;
     }
 
     public int getPriceCode() {
-        return priceCode;
+        return moviePriceCode;
     }
 
     public void setPriceCode(int arg) {
-        priceCode = arg;
+        moviePriceCode = arg;
     }
 
     public String getTitle() {
-        return title;
+        return movieTitle;
     }
 }
