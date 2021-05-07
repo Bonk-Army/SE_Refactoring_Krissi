@@ -1,23 +1,40 @@
 package excercise;
 
+import Prices.ChildrenPrice;
+import Prices.NewReleasePrice;
+import Prices.Price;
+import Prices.RegularPrice;
+
 public class Movie {
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
     public static final int NEW_RELEASE = 1;
     private String movieTitle;
-    private int moviePriceCode;
+    private Price moviePrice;
 
     public Movie(String movieTitle, int moviePriceCode) {
         this.movieTitle = movieTitle;
-        this.moviePriceCode = moviePriceCode;
+        this.setPriceCode(moviePriceCode);
     }
 
     public int getPriceCode() {
-        return moviePriceCode;
+        return moviePrice.getPrice();
     }
 
     public void setPriceCode(int arg) {
-        moviePriceCode = arg;
+        switch (arg) {
+        case REGULAR:
+            this.moviePrice = new RegularPrice();
+            break;
+        case CHILDRENS:
+            this.moviePrice = new ChildrenPrice();
+            break;
+        case NEW_RELEASE:
+            this.moviePrice = new NewReleasePrice();
+            break;
+        default:
+            throw new IllegalArgumentException("Incorrect Price Code");
+        }
     }
 
     public String getTitle() {
