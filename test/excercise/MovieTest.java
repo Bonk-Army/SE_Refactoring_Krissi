@@ -6,10 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class MovieTest {
-    final String MOVIE_TITLE = "Harry Potter";
-    final int MOVIE_PRICE = 0;
-    final int NEW_MOVIE_PRICE = 1;
-    Movie movie;
+    private final String MOVIE_TITLE = "Harry Potter";
+    private final int MOVIE_PRICE = 0;
+    private final int NEW_MOVIE_PRICE = 1;
+    private Movie movie;
 
     @BeforeEach
     void setUp() {

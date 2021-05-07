@@ -1,11 +1,10 @@
 package excercise;
 
-import java.lang.*;
 import java.util.*;
 
 class Customer {
-    private String customerName;
-    private Vector rentals = new Vector();
+    private final String customerName;
+    private final Vector rentals = new Vector();
 
     public Customer(String customerName) {
         this.customerName = customerName;

@@ -1,9 +1,9 @@
 package excercise;
 
-import Prices.ChildrenPrice;
-import Prices.NewReleasePrice;
-import Prices.Price;
-import Prices.RegularPrice;
+import prices.ChildrenPrice;
+import prices.NewReleasePrice;
+import prices.Price;
+import prices.RegularPrice;
 
 public class Movie {
     public static final int CHILDRENS = 2;

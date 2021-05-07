@@ -6,13 +6,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CustomerTest {
-    final String CUSTOMER_NAME = "Nico";
-    final String MOVIE_TITLE = "Harry Potter";
-    final int MOVIE_PRICE = 0;
-    final int RENTAL_DAYS = 14;
-    Customer customer;
-    Movie movie;
-    Rental rental;
+    private final String CUSTOMER_NAME = "Nico";
+    private final String MOVIE_TITLE = "Harry Potter";
+    private final int MOVIE_PRICE = 0;
+    private final int RENTAL_DAYS = 14;
+    private Customer customer;
+    private Rental rental;
 
     @BeforeEach
     void setUp() {
