@@ -1,0 +1,1 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c9f9b0765ee442baae86d0195089826e)](https://www.codacy.com/gh/Krissi005/SE_Refactoring/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Krissi005/SE_Refactoring&amp;utm_campaign=Badge_Grade)
